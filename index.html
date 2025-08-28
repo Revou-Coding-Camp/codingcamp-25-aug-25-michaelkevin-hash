@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="askUserName()">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="welcome">
+        <h2 id="welcome-text">Hi, Welcome To Website</h2>
+        <p>Ini Adalah Website Latihan Pertama</p>
+    </section>
+        <div class="banner">
+            <img src="images/LOGO REVOU.jpg" alt="banner" />
+        </div>
+
+    <section class="headquarters">
+    <h3>Our Headquarter</h3>
+    <div class="cities">
+        <div class="city">
+            <img src="images/headquarter jakarta.webp" alt="Jakarta" />
+            <p>Jakarta</p>
+        </div>
+    </div>
+</section>
+
+<section class="ceo">
+    <h3>Our CEO</h3>
+    <div class="ceo-card">
+        <img src="images/CEO.png" alt="CEO Image" />
+        <p>Matteo Sutto</p> <!-- Replace with real name -->
+        <p>Founder & CEO</p>
+    </div>
+</section>
+
+
+    <section id="message" class="contact-form">
+        <h3>Message Us</h3>
+        <form id="messageForm" onsubmit="return validateForm()">
+            <label>Name:</label><br>
+            <input type="text" id="name"><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" id="dob"><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female<br>
+
+            <label>Message:</label><br>
+            <textarea id="messageText"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>Created by Michael Kevin Descvio Wando Taher</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
